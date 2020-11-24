@@ -1,12 +1,119 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <script src="script.js"></script>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <title>Welcome</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/index.css" rel="stylesheet" type="text/css"/>
+  <script src="js/main.js"></script>
+  <script src="js/index.js"></script>
+</head>
+<body>
+<div class="navigation">
+  <div class="navigation-top">
+    <div class="navigation-left">
+      <a href="index.html">
+        <img src="img/logo.png" alt="" style="width: 11rem;height: 3.75rem;margin-right: 1rem">
+      </a>
+      <div class="search">
+        I am looking for...
+        <img src="img/search.png" alt="" style="width: 1.65rem;height: 1.65rem">
+      </div>
+    </div>
+    <a href="cat.html">
+      <img src="img/icon.png" alt="" style="width: 10rem;height: 2.5rem;margin-right: 1.5rem">
+    </a>
+    <img src="img/icon2.png" alt="" style="width: 2rem;height: 2.5rem;cursor: pointer;">
+  </div>
+  <div class="navigation-bottom">
+    <div style="margin-right:3.5rem">
+      Memu <img src="img/up.png" alt="">
+    </div>
+    <div style="margin-right: 2.5rem">
+      About us <img src="img/up.png" alt="">
+    </div>
+    <div style="margin-right: 2.2rem">
+      Activity <img src="img/up.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div class="banner">
+  <img src="img/index/cat.png" alt="" style="width: 100%;height: auto;display: block">
+  <div class="text">
+    <div>Last Year, 8687 animals</div>
+    <div style="padding-left: 2rem">were adopted from PetCloud.</div>
+    <img src="img/index/LEARNMORE.png" alt="" style="width: 17.5rem;height: 6rem;margin-left: 5rem;cursor: pointer">
+  </div>
+</div>
+
+<div class="meet-search">
+  Meet our friends now!
+  <div class="btn">
+    <div>
+      <img src="img/up-2.png" alt="" style="width: 2rem;height: 2rem;display: inline-block;">
+      <div class="select" id="select1">
+        Location
+        <div class="option" id="option1" style="left: -4rem">
+          <div>Cat</div>
+          <div>Dog</div>
+          <div>Bird</div>
+          <div>Rabbit</div>
+          <div>Others</div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="img/index/ADOPT.png" alt="" style="position: relative;top:0.5rem;">
+    </div>
+    <div>
+      <img src="img/index/DONATE.png" alt="" style="position: relative;top:0.5rem;">
+    </div>
+    <div>
+      <img src="img/up-2.png" alt="" style="width: 2rem;height: 2rem;display: inline-block;">
+      <div class="select" id="select2">
+        Cat
+        <div class="option" id="option2" style="right: 0;">
+          <div>NSW</div>
+          <div>VICTORIA</div>
+          <div>QUEENSLAND</div>
+          <div>SOUTH AUSTRALIA</div>
+          <div>WEST AUSTRALIA</div>
+          <div>TASMANIA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="list">
+  <div class="content" id="content">
+    <div>
+      <img src="./img/index/an1.png" alt="">
+    </div>
+    <div>
+      <img src="./img/index/an2.png" alt="">
+    </div>
+    <div>
+      <img src="./img/index/an1.png" alt="">
+    </div>
+    <div>
+      <img src="./img/index/an2.png" alt="">
+    </div>
+    <div>
+      <img src="./img/index/an1.png" alt="">
+    </div>
+  </div>
+  <div class="switch">
+    <img id="left" src="img/index/left.png" alt="" style="width: 0.6rem;height: 0.9rem;margin-right: 0.25rem;cursor: pointer">
+    <div id="p1" class="current"></div>
+    <div id="p2"></div>
+    <div id="p3"></div>
+    <div id="p4"></div>
+    <div id="p5"></div>
+    <img id="right" src="img/index/right.png" alt="" style="width: 0.6rem;height: 0.9rem;margin-left: 0.25rem;cursor: pointer">
+  </div>
+</div>
+</body>
 </html>

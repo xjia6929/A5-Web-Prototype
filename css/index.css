@@ -1,0 +1,136 @@
+
+.banner{
+  position: relative;
+}
+.banner .text{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-left: 2.5rem;
+  color: #858585;
+  font-size: 2rem;
+  line-height: 3.5rem;
+}
+
+.meet-search{
+  background: #41688c;
+  font-size: 1.75rem;
+  line-height: 4rem;
+  text-align: center;
+  color: #fff;
+  font-weight: bolder;
+}
+
+.meet-search .btn{
+  display: flex;
+  align-items: center;
+}
+.meet-search .btn img{
+  width: 100%;
+  height: auto;
+  display: block;
+  cursor: pointer;
+}
+.meet-search .btn > div{
+  flex: 1;
+  padding:0 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.meet-search .select{
+  font-size:1.6rem;
+  line-height:  2.75rem;
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  margin-left: 1rem;
+  flex: 1;
+  cursor: pointer;
+  position: relative;
+}
+.meet-search .option{
+  position: absolute;
+  top: 3rem;
+  width: 17.5rem;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  color: #41688c;
+  font-weight: bolder;
+  text-align: left;
+  background: #fff;
+  box-shadow: 0 0 19px 0 #676767;
+  border-radius: 4px;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+  z-index: 2;
+}
+.meet-search .option.show{
+  height: 14rem;
+  padding: 1.5rem 0;
+}
+.meet-search .option div{
+  padding:0 1.75rem ;
+}
+.meet-search .option div:hover{
+  background: #ccc;
+}
+
+.list{
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.list .content{
+  white-space: nowrap;
+  position: relative;
+  transition: all 0.3s;
+  left: 0;
+}
+.list .content.show1{
+  left: 0;
+}
+.list .content.show2{
+  left: -100%;
+}
+.list .content.show3{
+  left: -200%;
+}
+.list .content.show4{
+  left: -300%;
+}
+.list .content.show5{
+  left: -400%;
+}
+.list .content div{
+  width: 100%;
+  padding: 2.5rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.list .content img{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+}
+
+.switch{
+  position: absolute;
+  bottom: 2em;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s;
+}
+.switch div{
+  border-radius: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border:1px solid #41688c;
+  margin: 0 0.25rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.switch div.current{
+  background: #41688c;
+}

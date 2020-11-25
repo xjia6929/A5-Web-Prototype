@@ -1,0 +1,42 @@
+.main{
+  position: relative;
+  overflow: hidden;
+  top: -19rem;
+  height: 42rem;
+  padding-top: 19rem;
+}
+.feed {
+  background: #41688c;
+  border-top-right-radius: 2rem;
+  border-top-left-radius: 2rem;
+  padding: 0.5rem 2rem 3rem;
+  text-align: center;
+  position: relative;
+  top: -2rem;
+  transition: top 0.3s;
+}
+
+.feed.show{
+  top:-19rem
+}
+
+div.hid {
+  background: #41688c;
+}
+
+img.hid{
+  display: none;
+}
+img.show{
+  display: inline-block;
+}
+
+.hid div.flex {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.hid div img {
+  width: 20%;
+}

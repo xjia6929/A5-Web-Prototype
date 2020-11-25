@@ -1,10 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Title</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport"/>
+  <title>Cat</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css"/>
+  <link href="css/cat.css" rel="stylesheet" type="text/css"/>
+  <script src="js/main.js"></script>
+  <script src="js/cat.js"></script>
 </head>
 <body>
+<div class="navigation">
+  <div class="navigation-top">
+    <div class="navigation-left">
+      <a href="index.html">
+        <img src="img/logo.png" alt="" style="width: 11rem;height: 3.75rem;margin-right: 1rem">
+      </a>
+      <div class="search">
+        I am looking for...
+        <img src="img/search.png" alt="" style="width: 1.65rem;height: 1.65rem">
+      </div>
+    </div>
+    <a href="cat.html">
+      <img src="img/icon.png" alt="" style="width: 10rem;height: 2.5rem;margin-right: 1.5rem">
+    </a>
+    <img src="img/icon2.png" alt="" style="width: 2rem;height: 2.5rem;cursor: pointer;">
+  </div>
+  <div class="navigation-bottom">
+    <div style="margin-right:3.5rem">
+      Memu <img src="img/up.png" alt="">
+    </div>
+    <div style="margin-right: 2.5rem">
+      About us <img src="img/up.png" alt="">
+    </div>
+    <div style="margin-right: 2.2rem">
+      Activity <img src="img/up.png" alt="">
+    </div>
+  </div>
+</div>
+
+<div style='padding: 1rem'>
+  <div class="banner">
+    <div class="left">
+      <img src="img/index/left.png" id="left" style="width: 0.8rem;height: 1.25rem;cursor: pointer" alt="" class="before">
+      <div class="imgs">
+        <div style="overflow: hidden;position: relative;">
+          <div class='imgwaper' id="imgs">
+            <div>
+              <img src="img/cat/cat.png" alt="">
+            </div>
+            <div>
+              <img src="img/cat/cat.png" alt="">
+            </div>
+            <div>
+              <img src="img/cat/cat.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <img src="img/index/right.png" id="right" style="width: 0.8rem;height: 1.25rem;cursor: pointer"alt="" class="before">
+    </div>
+    <div class="right">
+      Name: Jacob <br>
+      Age: 3 years  <br>
+      Sex: Female  <br>
+      Color: Black and white Hea <br>
+      Healthy Condition: Healthy <br>
+      Location: NSW animal rescue center <br>
+      Animal Number: 27136458739 <br>
+    </div>
+    <div class="left">
+      <img src="img/cat/cats.png" style="width:100%;" alt="" class="before">
+    </div>
+    <div class="right">
+      <img id="ADOPT" src="img/cat/ADOPT.png" style="width:13.5rem;margin-left: 0.8rem;cursor: pointer" alt="">
+      <img id="DONATE" src="img/cat/DONATE.png" style="width:13.5rem;margin-left: 0.8rem;cursor: pointer" alt="">
+    </div>
+  </div>
+  <div class="title">Story of Jacob</div>
+  <div class="card">We found Jacob in a dilapidated water pipe. Her neck was stuck in the water pipe. Her health was very bad. Fortunately, we rescued her in time. Now she is lively and cute again.</div>
+  <div class="title" style="text-align: left">Similar Pets:</div>
+  <div class="cats">
+    <img src="img/cat/cats.png" alt="" style="width: 100%">
+  </div>
+
+  <div class="modal" id="modal-DONATE">
+    <div class="inner" id="inner-DONATE">
+      <img src="img/cat/close.png" alt="" class="close" id="close-DONATE">
+      <div class="form">
+        <div style="padding-bottom: 2rem">Sign up / Log in</div>
+        <div class="input"><div style="width: 11rem;padding-right: 0.7rem">First Name:</div><div class="bg"></div></div>
+        <div class="input"><div style="width: 11rem;padding-right: 0.7rem">Last Name:</div><div class="bg"></div></div>
+        <div class="input"><div style="width: 11rem;padding-right: 0.7rem">Email:</div><div class="bg"></div></div>
+        <div class="submit">Submit</div>
+      </div>
+    </div>
+  </div>
+  <div class="modal" id="modal-ADOPT">
+    <div class="inner" id="inner-ADOPT">
+      <img src="img/cat/close.png" alt="" class="close" id="close-ADOPT">
+      <div class="m2">
+        <img src="img/cat/m2.png" alt="" style="width: 100%">
+        <a href="" style="position: absolute;bottom: 4rem;left: 5rem"><img src="img/cat/Home.png" alt="" style="width: 8rem;cursor: pointer"></a>
+        <a href="" style="position: absolute;bottom: 4rem;right: 6rem"><img src="img/cat/Shop.png" alt="" style="width: 8rem;cursor: pointer"></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </body>
 </html>

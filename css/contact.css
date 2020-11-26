@@ -1,0 +1,114 @@
+.banner {
+  position: relative;
+}
+
+.banner .meet {
+  font-size: 2rem;
+  line-height: 2.5rem;
+  position: absolute;
+  bottom: 5rem;
+  left: 5rem;
+  color: #41688c;
+}
+
+.button {
+  padding: 3rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  background: #41688c;
+}
+
+.button img {
+  width: 31%;
+  cursor: pointer;
+}
+
+.chat {
+  overflow: hidden;
+  height: calc(40vw);
+}
+
+.chat img {
+  width: 100%;
+  transition: all 0.3s;
+  margin-top: -40%;
+  display: block;
+  cursor: pointer;
+}
+
+.chat.show img {
+  margin-top: 0;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal.show {
+  display: flex;
+}
+
+.modal .inner {
+  width: 30rem;
+  height: 20rem;
+  background: #fff;
+  border-radius: 1rem;
+  position: relative;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.modal .inner.in {
+  opacity: 1;
+  top: 0;
+}
+
+.modal .close {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.modal .inner .top {
+  color: #333;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+  width: 100%;
+}
+
+.modal .inner .center {
+  color: #333;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.modal .inner .bottom {
+  width: 10rem;
+  background: #ffc822;
+  color: #333;
+  font-size: 2rem;
+  line-height: 3rem;
+  border-radius: 3rem;
+  text-align: center;
+}

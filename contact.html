@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport"/>
-  <title>Feed</title>
+  <title>contact</title>
   <link href="css/style.css" rel="stylesheet" type="text/css"/>
-  <link href="css/feed.css" rel="stylesheet" type="text/css"/>
+  <link href="css/contact.css" rel="stylesheet" type="text/css"/>
   <script src="js/main.js"></script>
-  <script src="js/feed.js"></script>
+  <script src="js/contact.js"></script>
 </head>
 <body>
 <div class="navigation">
@@ -35,35 +35,45 @@
     <div style="margin-right: 2.5rem">
       About us <img src="img/up.png" alt="">
     </div>
-    <div style="margin-right: 2.2rem">
+    <div style="margin-right: 2.2rem" class="select">
       <a href="activity.html">Activity <img src="img/up.png" alt=""></a>
     </div>
   </div>
 </div>
 
-<img src="img/feed/bg.png" style="width: 100%" alt="">
+<div class="banner">
+  <img src="img/contact/bg.png" style="width: 100%" alt="">
+  <div class="meet">
+    Meet our professional<br>veterinary team!!
+  </div>
+</div>
 
-<div class="main">
-  <div class="feed" id="feed">
-    <img src="img/feed/up.png" alt="" style="cursor: pointer;width: 2rem" id="up">
-    <img src="img/feed/down.png" class="hid" alt="" style="cursor: pointer;width: 2rem" id="down">
-    <div class="hid">
-      <div style="text-align: left;padding-top: 1.5rem">
-        <img src="img/feed/YourItems.png" alt="" style="width: 14rem">
-      </div>
-      <div class="flex">
-        <img src="img/feed/f1.png" alt="">
-        <img src="img/feed/f2.png" alt="">
-        <img src="img/feed/f3.png" alt="">
-        <img src="img/feed/f.png" alt="">
-      </div>
-      <div class="flex">
-        <img src="img/feed/f4.png" alt="">
-        <img src="img/feed/f.png" alt="">
-        <img src="img/feed/f.png" alt="">
-        <img src="img/feed/f.png" alt="">
-      </div>
-    </div>
+<div class="button">
+  <img src="img/contact/ChatOnline.png" alt="" id="ChatOnline">
+  <img src="img/contact/CallUs.png" alt="" id="CallUs">
+  <img src="img/contact/Email.png" alt="" id="Email">
+</div>
+
+<div class="chat" id="chat">
+  <img src="img/contact/chat.png" alt="">
+</div>
+
+<div class="modal" id="modal-CallUs">
+  <div class="inner" id="inner-CallUs">
+    <img src="img/cat/close.png" alt="" class="close" id="close-CallUs">
+
+    <div class="top">Contact us：</div>
+    <div class="center">+61 0450090927</div>
+    <div class="bottom">Call</div>
+  </div>
+</div>
+<div class="modal" id="modal-Email">
+  <div class="inner" id="inner-Email">
+    <img src="img/cat/close.png" alt="" class="close" id="close-Email">
+
+    <div class="top">Contact us：</div>
+    <div class="center"> xjia6929@uni.sydney.edu.au</div>
+    <div class="bottom">Email</div>
   </div>
 </div>
 </body>

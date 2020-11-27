@@ -72,3 +72,78 @@ body, html {
   width: 0.9rem;
   height: 0.6rem;
 }
+
+
+
+.phone-call {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.phone-call.show {
+  display: flex;
+}
+
+.phone-call .inner {
+  width: 30rem;
+  height: 20rem;
+  background: #fff;
+  border-radius: 1rem;
+  position: relative;
+  transition: all 0.3s;
+  opacity: 0;
+  top: -1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.phone-call .inner.in {
+  opacity: 1;
+  top: 0;
+}
+
+.phone-call .close {
+  width: 1.8rem;
+  height: 1.8rem;
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.phone-call .inner .top {
+  color: #333;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: left;
+  width: 100%;
+}
+
+.phone-call .inner .center {
+  color: #333;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: center;
+}
+
+.phone-call .inner .bottom {
+  width: 10rem;
+  background: #ffc822;
+  color: #333;
+  font-size: 2rem;
+  line-height: 3rem;
+  border-radius: 3rem;
+  text-align: center;
+}

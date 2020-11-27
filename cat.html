@@ -21,8 +21,12 @@
         <img src="img/search.png" alt="" style="width: 1.65rem;height: 1.65rem">
       </div>
     </div>
+    <img id='phone' src="img/icon.png" alt="" style="width: 2.5rem;height: 2.5rem;margin-right: 1.5rem;cursor: pointer">
+    <a href="/">
+      <img src="img/icon3.png" alt="" style="width: 2.5rem;height: 2.5rem;margin-right: 1.5rem">
+    </a>
     <a href="cat.html">
-      <img src="img/icon.png" alt="" style="width: 10rem;height: 2.5rem;margin-right: 1.5rem">
+      <img src="img/icon4.png" alt="" style="width: 2.5rem;height: 2.5rem;margin-right: 1.5rem">
     </a>
     <a href="contact.html">
       <img src="img/icon2.png" alt="" style="width: 2rem;height: 2.5rem;cursor: pointer;">
@@ -71,8 +75,8 @@
       Location: NSW animal rescue center <br>
       Animal Number: 27136458739 <br>
     </div>
-    <div class="left">
-      <img src="img/cat/cats.png" style="width:100%;" alt="" class="before">
+    <div class="left" style='padding: 0 5rem;'>
+      <img src="img/cat/c.png" style="width:100%;" alt="" class="before">
     </div>
     <div class="right">
       <img id="ADOPT" src="img/cat/ADOPT.png" style="width:13.5rem;margin-left: 0.8rem;cursor: pointer" alt="">
@@ -109,6 +113,26 @@
     </div>
   </div>
 </div>
+<div class="phone-call" id="phone-call">
+  <div class="inner" id="inner-phone-call">
+    <img src="img/cat/close.png" alt="" class="close" id="close-phone-call">
 
+    <div class="top">Contact us：</div>
+    <div class="center">+61 0450090927</div>
+    <div class="bottom">Call</div>
+  </div>
+</div>
 </body>
+<script>
+  document.getElementById('phone').onclick=function () {
+    document.getElementById('phone-call').className='phone-call show';
+    setTimeout(function () {
+      document.getElementById('inner-phone-call').className='inner in';
+    })
+  }
+  document.getElementById('close-phone-call').onclick=function () {
+    document.getElementById('phone-call').className='phone-call';
+    document.getElementById('inner-phone-call').className='inner';
+  }
+</script>
 </html>
